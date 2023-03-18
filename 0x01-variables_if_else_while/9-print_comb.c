@@ -1,33 +1,24 @@
 #include <stdio.h>
 /**
 *main - entry point
-*Description: 'print alphabet'
-*Return: 0
+*Description: 'another alpha'
+*Return: always 0
 */
 
 int main(void)
-
 {
-    int i, j;
+	int i;
 
-    for (i = 0; i < 10; i++)
-    {
-        for (j = i; j < 10; j++)
-        {
-            putchar(i + '0');
-            putchar(j + '0');
-            if (i != 9 || j != 9)
-            {
-                putchar(',');
-                putchar(' ');
-            }
-            if (j == 9)
-            {
-                i++;
-                j = i - 1;
-            }
-        }
-    }
+	for (i = 0; i < 10; ++i)
+	{
+		putchar(i + '0');
+	if (i != 9)
+	{
+	putchar (',');
+	putchar (' ');
+	}
+	}
+	putchar('\n');
 
-    return (0);
+	return (0);
 }
