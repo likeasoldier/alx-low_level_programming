@@ -1,28 +1,28 @@
 #include <stdio.h>
 /**
-*main - entry point
-*Description: 'another alpha'
-*Return: always 0
-*/
+ * main - function to print single digit number
+ *
+ * Return: Always 0 (Success)
+ */
 
 int main(void)
 
 {
-	 int i, j;
+        int a,b;
 
-	{
-	for (i = 0; i < 9; i++)
-		{
-		for (j = i + 1; j <= 9; j++)
-			{
-			putchar(i + '0');
-			putchar(j + '0');
-			if (i != 8 || j != 9)
-				}
-			putchar(',');
-			putchar(' ');
-			}
-		}
-	}
-	return (0);
+        for (a = 0; a <= 8; a++)
+        {
+        for (a = b + 1; b <= 9; b++)
+        {
+        putchar (a + '0');
+        putchar (b + '0');
+        if (a < 8 || b < 9)
+        {
+        putchar (',');
+        putchar (' ');
+        }
+        }
+        }
+        putchar ('\n');
+        return (0);
 }
