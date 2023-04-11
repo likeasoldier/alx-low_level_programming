@@ -1,23 +1,25 @@
 #include "main.h"
+#include <stddef.h>
+#include <stdio.h>
 
 /**
- * main - Entry point
- * @argc: The number of arguments passed
- * @argv: An array of strings containing the arguments
+ * main - prints the number of arguments passed into it
+ * @argc: argument count
+ * @argv: argument vector
  *
- * Return: 0 on success
+ * Return: Always 0 (Success)
  */
-int main(int argc, char **argv)
+int main(int argc, char *argv[])
 {
 	int count = 0;
 
-	(void)argv;
-
-	while (argc--)
+	while (*argv != NULL)
+	{
 	count++;
+	argv++;
+	}
 
-	_putchar(count + '0');
-	_putchar('\n');
+	printf("%d\n", count);
 
 	return (0);
 }
