@@ -1,7 +1,13 @@
-#ifndef MAIN_H
-#define MAIN_H
-
-/* Standard Libraries */
+#include "main.h"
 #include <stdio.h>
 
-#endif /* MAIN_H */
+/**
+ * main - prints the program's name
+ *
+ * Return: Always 0
+ */
+int main(void)
+{
+	printf("%s\n", __FILE__);
+	return (0);
+}
